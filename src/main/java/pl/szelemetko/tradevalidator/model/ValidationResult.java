@@ -7,12 +7,11 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
 import lombok.ToString;
 
-@JsonInclude(value=Include.NON_NULL)
+@JsonInclude(value=Include.NON_EMPTY)
 @Data
 @ToString
 public class ValidationResult {
